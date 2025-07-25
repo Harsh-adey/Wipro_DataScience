@@ -30,7 +30,7 @@ def meeting_place(dict):
     most_time=max(dict,key=dict.get)
     return most_time
 
-with open("io.txt",'r') as file:
+with open("IO.txt",'r') as file:
     text=file.read().lower()
     words=text.split()
     stop_words = ["the", "on", "of", "is", "a", "an", ","]
