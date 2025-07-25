@@ -42,7 +42,7 @@ with open("IO.txt",'r') as file:
             else:
                 dict[word] += 1
 
-with open("io.txt", 'r') as file:
+with open("IO.txt", 'r') as file:
     data = [line.strip() for line in file]
 
 get_meeting_time(data)
