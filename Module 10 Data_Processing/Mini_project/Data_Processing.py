@@ -1,6 +1,6 @@
 import pandas as pd
 
-df=pd.read_csv("Dataprocessing.csv")
+df=pd.read_csv("DataProcessing.csv")
 print(df)
 print(df.shape)
 print(df.info())
