@@ -11,6 +11,11 @@ This solution includes miniproject solution and assignment questions solution ba
 6) Exception Handling
 7) Regular Expression
 8) List Comprehension / Lambda Function
+9) Numpy and Pandas
+10) Data Processing
+11) Matplotlib
+12) Regression and Classification
+13) Introduction To NLP
 
 
 
