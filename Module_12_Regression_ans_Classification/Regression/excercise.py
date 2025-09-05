@@ -10,7 +10,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
 
-df = pd.read_csv(r"cars_data.csv", header=None)
+df = pd.read_csv(r"carss.csv", header=None)
 
 columns = ["symboling", "normalized_losses", "make", "fuel_type", "aspiration",
            "num_doors", "body_style", "drive_wheels", "engine_location",
@@ -87,7 +87,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 
 # 1. Load dataset
-df = pd.read_csv("50_Startups.csv")
+df = pd.read_csv("Startups.csv")
 X = df.drop("Profit", axis=1)
 y = df["Profit"]
 categorical_cols = ["State"]
@@ -126,7 +126,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
 
-df = pd.read_csv("Salary_Data.csv")
+df = pd.read_csv("Salary.csv")
 X = df[["YearsExperience"]]  
 y = df["Salary"]             
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
