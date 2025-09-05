@@ -1,4 +1,4 @@
-(* # Pandas-DataFrame 
+# Pandas-DataFrame 
 """ Exercise 3: Pandas-DataFrame
 Download the data set and rename to cars.csv
 Link : Dataset: https://www.kaggle.com/uciml/autompg-dataset/data?select=auto-mpg.csv
@@ -12,19 +12,19 @@ https://archive.ics.uci.edu/ml/datasets/Auto+MPG
    e. Inspect the last 5 Rows
    f. Get some meta information on our DataFrame! """
 
-# a. Import Pandas *)
+# a. Import Pandas
 
 import pandas as pd
 
-(* #  b. Import the Cars Dataset and store the Pandas DataFrame in the variable cars *)
+#  b. Import the Cars Dataset and store the Pandas DataFrame in the variable cars
 
-df=pd.read_csv("auto-mpg.csv")
+df=pd.read_csv("Cars.csv")
 
-(* # c. Inspect the first 10 Rows of the DataFrame cars *)
+# c. Inspect the first 10 Rows of the DataFrame cars
 
 print(df.head(10))
 
-(* #  d. Inspect the DataFrame cars by "printing" cars *)
+#  d. Inspect the DataFrame cars by "printing" cars
 
 print(df.columns)
 print(df["car name"]) # for printing  whole column 
