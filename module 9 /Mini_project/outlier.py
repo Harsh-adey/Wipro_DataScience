@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-df = pd.read_csv("datasetExample.csv")
+df = pd.read_csv("dataset.csv")
 
 def outlier_detection(df):
     outliers = {}
@@ -9,9 +9,9 @@ def outlier_detection(df):
     for col in numeric_df.columns:
         data = numeric_df[col].dropna() 
         q1, q3 = np.percentile(data, [25, 75])
-        IQR = q3 - q1
-        lr = q1 - 1.5 * IQR
-        ur = q3 + 1.5 * IQR
+        IQRange = q3 - q1
+        lr = q1 - 1.5 * IQRange
+        ur = q3 + 1.5 * IQRange
         
        
         col_outliers = data[(data < lr) | (data > ur)]
